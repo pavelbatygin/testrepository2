@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<TITLE>12345</TITLE>
+<script>
+function count() {
+    now = new Date();
+setdate = new Date("Nov 29 2015 00:00:00");
+ 
+day = (setdate - now) / 1000 / 60 / 60 / 24;
+    day = Math.round(day);
+  document.write("До дня рождения осталось " + "<b>" + day + "</b>" + " дней!");
+  }
+  </script>
+</HEAD>
+<BODY BGCOLOR="FF611">
+<INPUT type="button" value="Рассчитать" onClick="count()">
+</BODY>
+</HTML>

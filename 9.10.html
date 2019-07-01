@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE>123</TITLE>
+<script>
+function Shag() {
+N=f1.t1.value;
+K=f1.t2.value;
+h=parseInt(f1.h.value);
+t="<table border=1>";
+t+="<tr><td>x</td><td>y</td></tr>";
+x=parseInt(N);
+while ( x<=parseInt(K)) {
+y=(Math.pow(2,x))/((2*x+1)*(3*x));
+t+="<tr><td>"+x+"</td><td>"+y+"</td></tr>";
+x=x+h;
+}
+t=t+"</table>";
+document.write(t);  
+}
+
+</script>
+</HEAD>
+<BODY BGCOLOR="FF611">
+<form name=f1>
+Начальное значение Х <INPUT type="textbox" name="t1" > </br> </br>
+Конечное значение Х <INPUT type="textbox" name="t2" > </br> </br>
+Шаг Х <INPUT name="h"> </br> </br>
+<INPUT type="button" value="Рассчитать" onClick="Shag()">  </br> </br> </br> </br>
+ </form>
+</BODY>
+</HTML>

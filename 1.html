@@ -1,0 +1,27 @@
+<HTML>
+<HEAD> 
+<script> 
+ function test() 
+{
+k=prompt('Укажите ваше имя','');
+now=new Date();
+d=now.getDate();
+m=now.getMonth();
+g=now.getFullYear();
+form1.text1.value=('Привет, '+k+', спасибо, что сегодня '+d+'-'+m+'-'+g+' Вы зашли на нашу страничку'); 
+}
+
+</script>
+
+</HEAD>
+<BODY>
+<form name="form1">
+
+<INPUT TYPE="button"  VALUE="Нажми" onClick="test()">
+ </br>
+ <INPUT TYPE="text" name="text1" size=100> 
+ 
+</form>
+
+</BODY>
+</HTML>
